@@ -1,17 +1,17 @@
 # software-project-valentin-apostolov
-# 🔐 BB84 Quantum Key Distribution Simulator
+# BB84 Quantum Key Distribution Simulator
 
 An interactive, modular Python-based simulator of the **BB84 Quantum Key Distribution (QKD)** protocol. Developed as a semester project for the **Technical University of Sofia**.
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://software-project-valentin-apostolov.streamlit.app/)
 
-## 🚀 Live Demo
+## Live Demo
 You can access the live simulation here: 
-👉 **[software-project-valentin-apostolov.streamlit.app](https://software-project-valentin-apostolov.streamlit.app/)**
+  **[software-project-valentin-apostolov.streamlit.app](https://software-project-valentin-apostolov.streamlit.app/)**
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 This software simulates the fundamental principles of quantum cryptography. It allows users to visualize how quantum mechanics (specifically the Heisenberg Uncertainty Principle) ensures secure communication between two parties (**Alice** and **Bob**) and detects any potential eavesdropping by a third party (**Eve**).
 
 ### Key Features:
@@ -23,7 +23,7 @@ This software simulates the fundamental principles of quantum cryptography. It a
 
 ---
 
-## 🛠️ Technological Framework
+## Technological Framework
 * **Language:** Python 3.9+
 * **Frontend:** [Streamlit](https://streamlit.io/)
 * **Logic & Math:** NumPy, Pandas
@@ -31,7 +31,7 @@ This software simulates the fundamental principles of quantum cryptography. It a
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 * `app.py` - Main entry point and Streamlit UI configuration.
 * `actors.py` - Logic for Alice, Bob, and Eve (Measure-and-Resend strategy).
 * `quantum_core.py` - Simulation of qubit preparation and measurement.
@@ -41,7 +41,7 @@ This software simulates the fundamental principles of quantum cryptography. It a
 
 ---
 
-## 📥 Installation & Local Run
+## Installation & Local Run
 To run this project on your local machine:
 
 1. **Clone the repository:**
