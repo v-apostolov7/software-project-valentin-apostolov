@@ -45,7 +45,7 @@ This software simulates the fundamental principles of quantum cryptography. It a
 To run this project on your local machine:
 
 1. **Clone the repository:**
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+   git clone [https://github.com/v-apostolov7/software-project-valentin-apostolov.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
 2. **Install dependencies:**
    pip install -r requirements.txt
