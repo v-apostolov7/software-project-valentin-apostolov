@@ -15,11 +15,11 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🔐 BB84 Quantum Key Distribution Simulator")
+st.title("BB84 Quantum Key Distribution Simulator")
 st.markdown("---")
 
 # Sidebar за контрол
-st.sidebar.header("🛠️ Simulation Control")
+st.sidebar.header("Simulation Control")
 n_bits = st.sidebar.slider("Number of Photons", 20, 1000, 200)
 eavesdrop = st.sidebar.checkbox("Activate Eavesdropper (Eve)")
 run_sim = st.sidebar.button("Execute BB84 Protocol")
@@ -56,7 +56,7 @@ if run_sim:
     c3.metric("QBER", f"{qber:.1f}%")
     c4.metric("Security", "PASS" if is_secure else "FAIL", delta_color="inverse")
 
-    st.markdown("### 📊 Statistical Analysis")
+    st.markdown("### Statistical Analysis")
     col_left, col_right = st.columns([2, 1])
 
     with col_left:
@@ -67,12 +67,12 @@ if run_sim:
         st.pyplot(vis.plot_qber_gauge(qber))
 
     if not is_secure:
-        st.error("🚨 SECURITY ALERT: Eavesdropping detected! QBER is above 11%. Key discarded.")
+        st.error("SECURITY ALERT: Eavesdropping detected! QBER is above 11%. Key discarded.")
     else:
-        st.success("✅ Secure key exchange successful. No significant noise or interception detected.")
+        st.success("Secure key exchange successful. No significant noise or interception detected.")
 
     # Детайлна таблица с данни (т. 2A)
-    with st.expander("🔍 View Raw Protocol Data"):
+    with st.expander("View Raw Protocol Data"):
         raw_df = pd.DataFrame({
             "Alice Bits": alice.bits[:20],
             "Alice Bases": alice.bases[:20],
